@@ -1,0 +1,201 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #7b2cbf, #ff7b00, #ff4f81);
+  min-height: 100vh;
+}
+
+/* Main App */
+.app {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+/* Main Card */
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  border-radius: 20%;
+  
+}
+
+/* Add Task Form */
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 13px 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.task-form input:focus {
+  border-color: #7b2cbf;
+}
+
+/* All Buttons */
+button {
+  border: none;
+  padding: 11px 16px;
+  border-radius: 9px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    #7b2cbf,
+    #ff4f81
+  );
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Filter Buttons */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Task Item */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  padding: 16px;
+  margin-bottom: 12px;
+
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 12px;
+
+  transition: 0.3s;
+}
+
+/* Task Hover */
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Content */
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.task-content span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Completed Task */
+.completed {
+  text-decoration: line-through;
+  color: #999 !important;
+}
+
+/* Edit Input */
+.task-content input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+/* Task Buttons */
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Delete Button */
+.delete {
+  background: #e63946;
+}
+
+/* Empty Message */
+.empty {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+  .app {
+    padding: 25px 12px;
+  }
+
+  .container {
+    padding: 22px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  /* Input and Add button */
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form button {
+    width: 100%;
+  }
+
+  /* Filters */
+  .filters {
+    flex-wrap: wrap;
+  }
+
+  .filters button {
+    flex: 1;
+  }
+
+  /* Task */
+  .task-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-buttons {
+    justify-content: flex-end;
+  }
+}
