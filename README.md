@@ -27,7 +27,7 @@ https://task-manager-online-web.netlify.app/
 
 ## GitHub
 
-https://github.com/yourusername/task-manager
+https://github.com/rushi-sultane/task-manager
 
 ## Installation
 
